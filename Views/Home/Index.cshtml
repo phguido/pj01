@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    @if(TempData["Erro"] != null )
+    {
+            <div class="alert alert-danger">
+                @TempData["Erro"]
+            </div>
+    }
+        @if(TempData["Sucesso"] != null )
+    {
+            <div class="alert alert-success">
+                @TempData["Sucesso"]
+            </div>
+    }
+    <h1 class="display-4">Ola Pedro</h1>
+    <p>Aperte o botao</p>
+    <button>Teste</button>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Teste git </a>.</p>
+</div>
